@@ -1,0 +1,193 @@
+body{
+	background: url(../img/body_bg.png) repeat;
+}
+.parents{
+	width: 1080px;
+	background: #fcfaee;
+	margin: 0 auto;
+}
+.header{
+	width: 100%;
+	height: 140px;
+	padding-top: 30px;
+	background: url(../img/header_bg.png) repeat-x left bottom;
+}
+#logo{
+	width: 100%;
+	height: 80px;
+}
+#logo a{
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: url(../img/logo.png) no-repeat center center;
+	margin: 0 auto;
+}
+.nav{
+	width: 80%;
+	padding: 0 10%;
+	height: 40px;
+	background: #b26646;
+	white-space:nowrap;
+}
+.nav ul{
+	width: 100%;
+	height: 40px;
+}
+.nav ul li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 3%;
+}
+.nav ul li a{
+	font-size: 15px;
+	color: #FFFFFF;
+}
+.huazhou{
+	width:100%;
+	height: 180px;
+	background: url(../img/huazhou.png) no-repeat center center;
+	margin-top: -10px;
+}
+.img_inter{
+	width: 980px;
+	margin: 40px auto 0;
+	padding-bottom: 50px;
+}
+.img_inter img{
+	display: inline-block;
+}
+/*产品展示页面product*/
+.product{
+	width: 100%;
+	margin: 30px auto 0;
+	padding-bottom: 200px;
+}
+.product h2{
+	font-family: "宋体";
+	width:30%;
+	margin-left:30px;
+	font-size: 16px;
+	line-height: 40px;
+	color:#a76a53;
+	text-indent: 1em;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #B26547;
+}
+.product h2 span{
+	font-size: 20px;
+	margin-right:30px;
+	color: #b26547;
+}
+.product ul{
+	width: 100%;
+}
+.product ul li{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	padding: 40px 32px;
+}
+.product ul li img{
+	display:block;
+	width: 200px;
+	height: 200px;
+}
+.product ul li p{
+	width: 100%;
+	font-size: 14px;
+	line-height: 36px;
+	color: #936857;
+	text-align: center;
+	background: #EDEEEE;
+}
+/*品牌介绍*/
+.introduction{
+	width: 94%;
+	padding: 40px 3% 100px;
+	background: #fdfdfd;
+}
+#in_logo{
+	display: block;
+	width:200px;
+	height: 200px;
+	margin: 20px auto;
+}
+.introduction h3{
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+	color: #b26646;
+	margin-bottom: 20px;
+}
+.introduction p{
+	text-indent: 2em;
+	line-height: 30px;
+	font-size: 15px;
+	color: #333;
+}
+.introduction .houyu{
+	text-indent: 0;
+	width: 100%;
+	line-height: 40px;
+	font-size: 16px;
+	color: #b26646;
+	text-align: center;
+	margin: 40px;
+}
+.introduction .tupian{
+	width: 910px;
+	height: 300px;
+	margin: 10px auto;
+}
+.introduction .tupian img{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 50px 50px;
+}
+/*养生常识*/
+.knowledge{
+	width: 100%;
+	padding: 60px 0 100px;
+}
+.konw_text{
+	width: 94%;
+	background: #f9f9f9;
+	padding:30px 2% ;
+	margin: 20px auto;
+	font-size: 14px;
+}
+.konw_text h3{
+	width: 100%;
+	line-height: 38px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: #d0957c;
+	text-indent: 1em;
+	margin-bottom: 20px;
+}
+.konw_text p{
+	text-indent: 2em;
+	line-height: 30px;
+	font-size: 15px;
+	color: #333;
+}
+.konw_text img{
+	display: block;
+	width: 400px;
+	height: 350px;
+	margin: 10px auto 20px;
+}
+/*联系我们*/
+.contactUs{
+	width: 100%;
+	padding: 100px 0;
+}
+.contactUs img{
+	display: block;
+	width: 900px;
+	height: 600px;
+	margin: 0 auto;
+}
