@@ -1,8 +1,8 @@
 body{
-	background: url(../img/body_bg.png) repeat;
+	background: #fcfaee;
 }
 .parents{
-	width: 1080px;
+	width:100%;
 	background: #fcfaee;
 	margin: 0 auto;
 }
@@ -38,7 +38,7 @@ body{
 	float: left;
 	height: 40px;
 	line-height: 40px;
-	padding: 0 3%;
+	padding: 0 4%;
 }
 .nav ul li a{
 	font-size: 15px;
@@ -51,18 +51,22 @@ body{
 	margin-top: -10px;
 }
 .img_inter{
-	width: 980px;
-	margin: 40px auto 0;
-	padding-bottom: 50px;
+	width:70%;
+	margin: 20px auto 0;
 }
 .img_inter img{
 	display: inline-block;
+	width: 33%;
+	height: 230px;
+}
+.img_inter .center_img{
+	width: 15%;
+	margin: 0 9%;
 }
 /*产品展示页面product*/
 .product{
-	width: 100%;
-	margin: 30px auto 0;
-	padding-bottom: 200px;
+	width: 1180px;
+	margin: 30px auto 30px;
 }
 .product h2{
 	font-family: "宋体";
@@ -72,7 +76,7 @@ body{
 	line-height: 40px;
 	color:#a76a53;
 	text-indent: 1em;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	border-bottom: 2px solid #B26547;
 }
 .product h2 span{
@@ -81,13 +85,13 @@ body{
 	color: #b26547;
 }
 .product ul{
-	width: 100%;
+	width:100%;
 }
 .product ul li{
 	width: 200px;
-	height: 200px;
+	height:180px;
 	display: inline-block;
-	padding: 40px 32px;
+	padding: 40px 46px;
 }
 .product ul li img{
 	display:block;
@@ -105,8 +109,8 @@ body{
 /*品牌介绍*/
 .introduction{
 	width: 94%;
-	padding: 40px 3% 100px;
-	background: #fdfdfd;
+	padding: 40px 3% 10px;
+	/*background: #fdfdfd;*/
 }
 #in_logo{
 	display: block;
@@ -150,7 +154,7 @@ body{
 /*养生常识*/
 .knowledge{
 	width: 100%;
-	padding: 60px 0 100px;
+	padding: 60px 0 10px;
 }
 .konw_text{
 	width: 94%;
@@ -183,11 +187,11 @@ body{
 /*联系我们*/
 .contactUs{
 	width: 100%;
-	padding: 100px 0;
+	padding: 50px 0 10px;
 }
 .contactUs img{
 	display: block;
-	width: 900px;
-	height: 600px;
+	width: 550px;
+	height: 350px;
 	margin: 0 auto;
 }
