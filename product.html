@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>产品展示</title>
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
 	</head>
 	<body>
 		<div class="parents">
@@ -15,24 +16,44 @@
 				<ul>
 					<li><a href="index.html">网站首页</a></li>
 					<li><a href="product.html">产品展示</a></li>
+					<li><a href="feedback.html">代理反馈</a></li>
+					<li><a href="authorization.html">授权查询</a></li>
 					<li><a href="introduction.html">品牌介绍</a></li>
 					<li><a href="knowledge.html">养生常识</a></li>
-					<li><a href="contactUs.html">联系我们</a></li>
+					<li><a href="contactUs.html">在线咨询</a></li>
 				</ul>
 			</div>
 			<!--产品展示-->
 			<div class="product">
-				<h2><span>医源堂</span>足语养生足贴</h2>
+				<div class="product_header"><h2><span>医源堂</span>足语养生足贴</h2></div>
 				<ul>
-					<li><img src="img/IMG_5159.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/IMG_5164.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/IMG_5166.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/IMG_5167.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/IMG_5168.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/IMG_5170.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li><img src="img/img1.png"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7053.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7054.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7055.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7056.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7057.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7060.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7061.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7063.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7064.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7098.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7099.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7100.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/IMG_7101.JPG"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/img_zuih.jpg"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/img_zuih2.png"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/img_zuih3.png"/><br><p>医源堂足语养生足贴</p></li>
 				</ul>
 			</div>
+			<script>
+				$(document).ready(function(){
+					$('.produt_list').mouseover(function(){
+						$(this).find('p').show();
+						$(this).prevAll().find('p').hide();
+						$(this).nextAll().find('p').hide();
+					});
+				})
+			</script>
 		</div>
 	</body>
 </html>

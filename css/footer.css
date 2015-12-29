@@ -1,8 +1,8 @@
 body{
-	background: url(../img/body_bg.png) repeat;
+	background: #fcfaee;
 }
 .parents{
-	width: 1080px;
+	width:100%;
 	background: #fcfaee;
 	margin: 0 auto;
 }
@@ -24,8 +24,8 @@ body{
 	margin: 0 auto;
 }
 .nav{
-	width: 80%;
-	padding: 0 10%;
+	width: 76%;
+	padding: 0 12%;
 	height: 40px;
 	background: #b26646;
 	white-space:nowrap;
@@ -38,7 +38,7 @@ body{
 	float: left;
 	height: 40px;
 	line-height: 40px;
-	padding: 0 3%;
+	padding: 0 4%;
 }
 .nav ul li a{
 	font-size: 15px;
@@ -51,43 +51,59 @@ body{
 	margin-top: -10px;
 }
 .img_inter{
-	width: 980px;
-	margin: 40px auto 0;
-	padding-bottom: 50px;
+	width:960px;
+	margin: 20px auto 0;
 }
 .img_inter img{
 	display: inline-block;
+	width:260px;
+	height: 230px;
+	padding: 0 26px;
+}
+.img_inter .center_img{
+	width: 160px;
+	padding: 0 76px;
 }
 /*产品展示页面product*/
 .product{
-	width: 100%;
+	width: 1180px;
 	margin: 30px auto 0;
-	padding-bottom: 200px;
+}
+.product .product_header{
+	width: 100%;
+	border-bottom: 2px solid #dbc3b9;
+	margin-bottom: 10px;
 }
 .product h2{
 	font-family: "宋体";
 	width:30%;
-	margin-left:30px;
 	font-size: 16px;
-	line-height: 40px;
+	line-height: 36px;
 	color:#a76a53;
-	text-indent: 1em;
-	margin-bottom: 30px;
-	border-bottom: 2px solid #B26547;
+	text-indent: 2em;
+	background: #dbc3b9;
+	border-radius: 10px 10px 0 0;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .product h2 span{
+	display: inline-block;
 	font-size: 20px;
 	margin-right:30px;
 	color: #b26547;
 }
 .product ul{
-	width: 100%;
+	width:100%;
 }
 .product ul li{
 	width: 200px;
-	height: 200px;
+	height:180px;
 	display: inline-block;
-	padding: 40px 32px;
+	padding: 30px 46px;
+	position: relative;
+}
+.product ul li:hover{
+	cursor: pointer;
 }
 .product ul li img{
 	display:block;
@@ -95,24 +111,68 @@ body{
 	height: 200px;
 }
 .product ul li p{
-	width: 100%;
+	width: 200px;
 	font-size: 14px;
 	line-height: 36px;
-	color: #936857;
+	color: #FFFFFF;
 	text-align: center;
-	background: #EDEEEE;
+	background: #666564;
+	filter:alpha(opacity=70);
+	opacity: 0.7;
+	position: absolute;
+	left: 46px;
+	bottom: 10px;
+	display:none;
 }
+/*代理反馈feedback*/
+table{
+	empty-cells:show;
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+.titbox{
+	color:#a76a53;
+	overflow:hidden;
+	width:1120px;
+	margin:20px auto;
+	border-bottom:2px solid #dbc3b9;
+	}
+.titbox h2{
+	width: 360px; 
+	font-size: 16px; 
+	background: #dbc3b9; 
+	border-radius: 10px 10px 0 0; 
+	height: 36px; 
+	line-height: 36px; 
+	text-indent: 1em;
+	}
+.scroll{
+	width:1100px;
+	color:#333333;
+	margin:0 auto;
+	overflow:hidden;
+	border: 10px solid #F9F9F9;
+	}
+.scroll img{
+	border:solid 2px #F9F9F9;
+	margin:0 5px;
+	}
+.scroll a:hover img{
+	border:solid 1px #990000;
+	}
+/*end*/
+
 /*品牌介绍*/
 .introduction{
-	width: 94%;
-	padding: 40px 3% 100px;
-	background: #fdfdfd;
+	width: 1180px;
+	margin: 10px auto 20px;
+	/*background: #fdfdfd;*/
 }
 #in_logo{
 	display: block;
 	width:200px;
 	height: 200px;
-	margin: 20px auto;
+	margin: 10px auto 0;
 }
 .introduction h3{
 	width: 100%;
@@ -134,7 +194,7 @@ body{
 	font-size: 16px;
 	color: #b26646;
 	text-align: center;
-	margin: 40px;
+	margin:20px;
 }
 .introduction .tupian{
 	width: 910px;
@@ -149,45 +209,139 @@ body{
 }
 /*养生常识*/
 .knowledge{
-	width: 100%;
-	padding: 60px 0 100px;
+	width:1180px;
+	margin: 30px auto 0;
 }
 .konw_text{
-	width: 94%;
-	background: #f9f9f9;
-	padding:30px 2% ;
+	width:1180px;
 	margin: 20px auto;
 	font-size: 14px;
 }
 .konw_text h3{
-	width: 100%;
-	line-height: 38px;
+	width:1180px;
+	line-height: 36px;
 	font-size: 16px;
-	color: #FFFFFF;
-	background: #d0957c;
+	color:#B26646;
+	border-bottom:2px solid #DBC3B9 ;
 	text-indent: 1em;
 	margin-bottom: 20px;
+	white-space:nowrap;
 }
 .konw_text p{
-	text-indent: 2em;
 	line-height: 30px;
-	font-size: 15px;
+	font-size: 14px;
 	color: #333;
 }
 .konw_text img{
 	display: block;
-	width: 400px;
-	height: 350px;
+	width: 350px;
+	height:280px;
 	margin: 10px auto 20px;
 }
-/*联系我们*/
+/*在线咨询*/
 .contactUs{
-	width: 100%;
-	padding: 100px 0;
+	width:1180px;
+	margin: 20px auto 0;
 }
-.contactUs img{
+.contactUs .contactUs_logo{
 	display: block;
-	width: 900px;
-	height: 600px;
+	width: 570px;
+	height: 350px;
 	margin: 0 auto;
 }
+.contactUs p{
+	width:100%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+}
+.contactUs p:hover{
+	color: #B26547;
+	cursor: pointer;
+}
+.contactUs p img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+/*授权查询*/
+.author_find{
+	width: 800px;
+	height: 36px;
+	margin: 20px auto 0;
+	position: relative;
+}
+.author_find input{
+	border: none;
+	outline: none;
+	background: none;
+}
+#author_text{
+	display: inline-block;
+	width: 300px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #B26547;
+	font-size: 14px;
+	color: #666564;
+	position: absolute;
+	right: 70px;
+	top: 0;
+}
+#author_search{
+	display: inline-block;
+	width: 70px;
+	height: 38px;
+	line-height: 38px;
+	color: #F9F9F9;
+	background: #B26547;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.authorization{
+	width: 800px;
+	margin: 20px auto 0;
+	background:#F9F9F9;
+}
+.authorization p{
+	width:100%;
+}
+.authorization p span{
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 14px;
+	text-indent: 1em;
+}
+.authorization p strong{
+	display: inline-block;
+	width:240px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	font-size: 14px;
+	color: #B26646;
+}
+#shouquan_book{
+	width: 100%;
+}
+#shouquan_book p{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #B26646;
+	text-align: center;
+}
+#book_img{
+	display: block;
+	width: 200px;
+	height: 300px;
+	margin: 0 auto;
+}
+/*end*/
