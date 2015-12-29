@@ -5,6 +5,7 @@
 		<title>授权查询</title>
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
 	</head>
 	<body>
 		<div class="parents">
@@ -23,10 +24,10 @@
 				</ul>
 			</div>
 			<div class="author_find">
-				<input id="author_text" type="text" value="" name=""/>
-				<input id="author_search" type="button" value="查询"/>
+				<input id="author_text" type="text" value="" name="username"/>
+				<input id="author_search" type="button" value="查询" onclick="search();" />
 			</div>
-			<div class="authorization">
+			<div  id="donttaineirong"  class="authorization">
 				<p><span>姓名:</span><strong>1111</strong><span>代理级别:</span><strong>111</strong></p>
 				<p><span>年龄:</span><strong>1111</strong><span>联系方式:</span><strong>111</strong></p>
 				<p><span>所在区域:</span><strong>1111</strong></p>
@@ -37,4 +38,21 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+                  function search(){
+                  	var user_name=$("#author_text").value();
+	      $.ajax({
+	          url: "/agentsearch.jhtml",
+	          data:{
+	              user_name:user_name
+	          },
+	          beforeSend:function(){
+	              $("#donttaineirong").html('正在加载……');
+	          },
+	          success: function (data) {
+	              $("#donttaineirong").html(data);
+	          }
+	      });
+	  }
+	</script>
 </html>
