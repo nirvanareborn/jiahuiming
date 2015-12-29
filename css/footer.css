@@ -280,19 +280,19 @@ table{
 }
 #author_text{
 	display: inline-block;
-	width: 300px;
+	width: 600px;
 	height: 36px;
 	line-height: 36px;
 	border: 1px solid #B26547;
 	font-size: 14px;
 	color: #666564;
 	position: absolute;
-	right: 70px;
+	left: 0;
 	top: 0;
 }
 #author_search{
 	display: inline-block;
-	width: 70px;
+	width: 160px;
 	height: 38px;
 	line-height: 38px;
 	color: #F9F9F9;
