@@ -25,35 +25,81 @@
 			</div>
 			<!--产品展示-->
 			<div class="product">
-				<div class="product_header"><h2><span>医源堂</span>足语养生足贴</h2></div>
+				<div class="product_header"><h2>产品展示</h2></div>
 				<ul>
-					<li class="produt_list"><img src="img/product/IMG_7053.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7054.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7055.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7056.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7057.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7060.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7061.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7063.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7064.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7098.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7099.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7100.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/IMG_7101.JPG"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/img_zuih.jpg"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/img_zuih2.png"/><br><p>医源堂足语养生足贴</p></li>
-					<li class="produt_list"><img src="img/product/img_zuih3.png"/><br><p>医源堂足语养生足贴</p></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan01.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan02.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan03.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan04.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan05.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan06.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan07.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhan08.png"/></li>
+					
 				</ul>
-			</div>
-			<script>
-				$(document).ready(function(){
-					$('.produt_list').mouseover(function(){
-						$(this).find('p').show();
-						$(this).prevAll().find('p').hide();
-						$(this).nextAll().find('p').hide();
-					});
-				})
+				<div class="product_header"><h2>产品介绍</h2></div>
+				<div id="jieshao1">
+				  <a href="javascript:;" id="prev"><</a>
+				  <a href="javascript:;" id="next">></a>
+				  <img src="img/product/jieshao/img.jpg" id="pic" />
+				</div>
+				<script>
+
+				var oImg = document.getElementById('pic');
+				var oPrev = document.getElementById('prev');
+				var oNext = document.getElementById('next');
+				
+				var num = 0;
+				
+				var arr = [
+					'img/product/jieshao/img.jpg',
+					'img/product/jieshao/img01.jpg',
+					'img/product/jieshao/img02.jpg',
+					'img/product/jieshao/img03.jpg',
+					'img/product/jieshao/img04.jpg',
+					'img/product/jieshao/img05.jpg',
+					'img/product/jieshao/img06.jpg',
+					'img/product/jieshao/img08.jpg',
+					'img/product/jieshao/img09.jpg',
+					'img/product/jieshao/img10.jpg',
+					'img/product/jieshao/img11.jpg',
+					'img/product/jieshao/img12.jpg',
+					'img/product/jieshao/img13.jpg',
+					'img/product/jieshao/img14.jpg',
+					'img/product/jieshao/img15.jpg',
+					'img/product/jieshao/img16.jpg',
+					'img/product/jieshao/img17.jpg',
+					'img/product/jieshao/img18.jpg',
+				];
+				
+				
+				
+				
+				oPrev.onclick = function(){
+					
+					num --;
+					if( num < 0 ){
+						num = arr.length - 1;		
+					}
+					
+					oImg.src = arr[num];
+					
+				};
+				
+				oNext.onclick = function(){
+					
+					num ++;
+					if( num == arr.length ){
+						num = 0;		
+					}
+					
+					oImg.src = arr[num];
+					
+				};
+
 			</script>
+
+			</div>
 		</div>
 	</body>
 </html>
