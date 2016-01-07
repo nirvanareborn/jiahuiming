@@ -76,19 +76,25 @@
 				</ul>
 			</div>
 			<div class="author_find">
-				<input id="author_text" type="text" value="" name=""/>
-				<input id="author_search" type="button" value="查 &nbsp询"/>
+				<input id="author_text" type="text" value="" name="username"/>
+				<input id="author_search" type="button" value="查询" onclick="search();" />
 			</div>
-			<div class="authorization">
-				<p><span>姓名:</span><strong>1111</strong><span>代理级别:</span><strong>111</strong></p>
-				<p><span>年龄:</span><strong>1111</strong><span>联系方式:</span><strong>111</strong></p>
-				<p><span>所在区域:</span><strong>1111</strong></p>
-				<div id="shouquan_book">
-					<p>代理授权证书</p>
-					<img id="book_img" src="img/shouquan.jpg"/>
-				</div>
-			</div>
+			<div  id="donttaineirong"  class="authorization"></div>
 		</div>
 		<div id="book_big"><img id="book_big_img" src=""/><span id="book_big_close">x</span></div>
 	</body>
+	<script type="text/javascript">
+                  function search(){
+                  	var user_name=$("#author_text").val();
+	      $.ajax({
+	          url: "/agentsearch.jhtml?user_name="+user_name,
+	          beforeSend:function(){
+	              $("#donttaineirong").html('正在加载……');
+	          },
+	          success: function (data) {
+	              $("#donttaineirong").html(data);
+	          }
+	      });
+	  }
+	</script>
 </html>
