@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>产品介绍</title>
+		<link rel="stylesheet" href="css/public.css" type="text/css" />
+		<link rel="stylesheet" href="css/footer.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<style>
+			#projs_big{
+				width: 500px;
+				height: 550px;
+				border: 8px solid #F9F9F9;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -275px 0 0 -250px;
+				z-index: 2;
+				display: none;
+			}
+			#projs_big_img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#projs_big_close{
+				display: block;
+				width:20px;
+				height:20px;
+				line-height: 20px;
+				border-radius: 10px;
+				background:#c70c33;
+				color: #FFFFFF;
+				font-size: 16px;
+				text-align: center;
+				position: absolute;
+				right: -15px;
+				top: -15px;
+				z-index: 11;
+			}
+			#projs_big_close:hover{
+				cursor: pointer;
+			}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('#projs_big_close').click(function(){
+				$('#projs_big').css('display','none');
+			});
+			$('.produtjs_list img').each(function(){
+				$('.produtjs_list img').click(function(){
+					var src = $(this).attr('src');
+					$('#projs_big_img').attr('src',src);
+					$('#projs_big').css('display','block');
+				});
+			})
+		})
+		</script>
+	</head>
+	<body>
+		<div class="parents">
+			<div class="header">
+				<div id="logo"><a href="index.html"></a></div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="product.html">产品展示</a></li>
+					<li><a href="product_js.html">产品介绍</a></li>
+					<li><a href="feedback.html">代理反馈</a></li>
+					<li><a href="authorization.html">授权查询</a></li>
+					<li><a href="introduction.html">品牌介绍</a></li>
+					<li><a href="knowledge.html">养生常识</a></li>
+					<li><a href="contactUs.html">在线咨询</a></li>
+				</ul>
+			</div>
+			<!--产品展示-->
+			<div class="product">
+				<div class="product_header"><h2>产品介绍</h2></div>
+				<ul>
+					<li class="produtjs_list"><img src="img/product/jieshao/img.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img01.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img02.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img03.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img04.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img05.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img06.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img08.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img09.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img10.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img11.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img12.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img13.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img14.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img15.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img16.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img17.jpg"/></li>
+					<li class="produtjs_list"><img src="img/product/jieshao/img18.jpg"/></li>
+				</ul>
+				
+			</div>
+		</div>
+		<div id="projs_big"><img id="projs_big_img" src=""/><span id="projs_big_close">x</span></div>
+	</body>
+</html>
+ 

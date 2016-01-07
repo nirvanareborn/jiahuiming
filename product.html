@@ -6,6 +6,59 @@
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<style>
+			#pro_big{
+				width: 500px;
+				height: 550px;
+				border: 8px solid #F9F9F9;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -275px 0 0 -250px;
+				z-index: 2;
+				display: none;
+			}
+			#pro_big_img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#pro_big_close{
+				display: block;
+				width:20px;
+				height:20px;
+				line-height: 20px;
+				border-radius: 10px;
+				background:#c70c33;
+				color: #FFFFFF;
+				font-size: 16px;
+				text-align: center;
+				position: absolute;
+				right: -15px;
+				top: -15px;
+				z-index: 11;
+			}
+			#pro_big_close:hover{
+				cursor: pointer;
+			}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('#pro_big_close').click(function(){
+				$('#pro_big').css('display','none');
+			});
+			$('.produt_list img').each(function(){
+				$('.produt_list img').click(function(){
+					var src = $(this).attr('src');
+					$('#pro_big_img').attr('src',src);
+					$('#pro_big').css('display','block');
+				});
+			})
+		})
+		</script>
 	</head>
 	<body>
 		<div class="parents">
@@ -16,6 +69,7 @@
 				<ul>
 					<li><a href="index.html">网站首页</a></li>
 					<li><a href="product.html">产品展示</a></li>
+					<li><a href="product_js.html">产品介绍</a></li>
 					<li><a href="feedback.html">代理反馈</a></li>
 					<li><a href="authorization.html">授权查询</a></li>
 					<li><a href="introduction.html">品牌介绍</a></li>
@@ -29,7 +83,7 @@
 				<ul>
 					<li class="produt_list"><img src="img/product/zhanshi/zhan01.png"/></li>
 					<li class="produt_list"><img src="img/product/zhanshi/zhan02.png"/></li>
-					<li class="produt_list"><img src="img/product/zhanshi/zhan03.png"/></li>
+					<li class="produt_list"><img src="img/product/zhanshi/zhanshi003.png"/></li>
 					<li class="produt_list"><img src="img/product/zhanshi/zhan04.png"/></li>
 					<li class="produt_list"><img src="img/product/zhanshi/zhan05.png"/></li>
 					<li class="produt_list"><img src="img/product/zhanshi/zhan06.png"/></li>
@@ -37,70 +91,9 @@
 					<li class="produt_list"><img src="img/product/zhanshi/zhan08.png"/></li>
 					
 				</ul>
-				<div class="product_header"><h2>产品介绍</h2></div>
-				<div id="jieshao1">
-				  <a href="javascript:;" id="prev"><</a>
-				  <a href="javascript:;" id="next">></a>
-				  <img src="img/product/jieshao/img.jpg" id="pic" />
-				</div>
-				<script>
-
-				var oImg = document.getElementById('pic');
-				var oPrev = document.getElementById('prev');
-				var oNext = document.getElementById('next');
-				
-				var num = 0;
-				
-				var arr = [
-					'img/product/jieshao/img.jpg',
-					'img/product/jieshao/img01.jpg',
-					'img/product/jieshao/img02.jpg',
-					'img/product/jieshao/img03.jpg',
-					'img/product/jieshao/img04.jpg',
-					'img/product/jieshao/img05.jpg',
-					'img/product/jieshao/img06.jpg',
-					'img/product/jieshao/img08.jpg',
-					'img/product/jieshao/img09.jpg',
-					'img/product/jieshao/img10.jpg',
-					'img/product/jieshao/img11.jpg',
-					'img/product/jieshao/img12.jpg',
-					'img/product/jieshao/img13.jpg',
-					'img/product/jieshao/img14.jpg',
-					'img/product/jieshao/img15.jpg',
-					'img/product/jieshao/img16.jpg',
-					'img/product/jieshao/img17.jpg',
-					'img/product/jieshao/img18.jpg',
-				];
-				
-				
-				
-				
-				oPrev.onclick = function(){
-					
-					num --;
-					if( num < 0 ){
-						num = arr.length - 1;		
-					}
-					
-					oImg.src = arr[num];
-					
-				};
-				
-				oNext.onclick = function(){
-					
-					num ++;
-					if( num == arr.length ){
-						num = 0;		
-					}
-					
-					oImg.src = arr[num];
-					
-				};
-
-			</script>
-
 			</div>
 		</div>
+		<div id="pro_big"><img id="pro_big_img" src=""/><span id="pro_big_close">x</span></div>
 	</body>
 </html>
  

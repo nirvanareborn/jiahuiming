@@ -6,6 +6,57 @@
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<style>
+			#book_big{
+				width: 500px;
+				height: 550px;
+				border: 8px solid #F9F9F9;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -275px 0 0 -250px;
+				z-index: 2;
+				display: none;
+			}
+			#book_big_img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#book_big_close{
+				display: block;
+				width:20px;
+				height:20px;
+				line-height: 20px;
+				border-radius: 10px;
+				background:#c70c33;
+				color: #FFFFFF;
+				font-size: 16px;
+				text-align: center;
+				position: absolute;
+				right: -15px;
+				top: -15px;
+				z-index: 11;
+			}
+			#book_big_close:hover{
+				cursor: pointer;
+			}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('#book_big_close').click(function(){
+				$('#book_big').css('display','none');
+			});
+			$('#book_img').click(function(){
+				$('#book_big').css('display','block');
+				var src = $('#book_img').attr('src');
+				$('#book_big_img').attr('src',src);
+			});
+		})
+		</script>
 	</head>
 	<body>
 		<div class="parents">
@@ -16,6 +67,7 @@
 				<ul>
 					<li><a href="index.html">网站首页</a></li>
 					<li><a href="product.html">产品展示</a></li>
+					<li><a href="product_js.html">产品介绍</a></li>
 					<li><a href="feedback.html">代理反馈</a></li>
 					<li><a href="authorization.html">授权查询</a></li>
 					<li><a href="introduction.html">品牌介绍</a></li>
@@ -24,24 +76,19 @@
 				</ul>
 			</div>
 			<div class="author_find">
-				<input id="author_text" type="text" value="" name="username"/>
-				<input id="author_search" type="button" value="查询" onclick="search();" />
+				<input id="author_text" type="text" value="" name=""/>
+				<input id="author_search" type="button" value="查 &nbsp询"/>
 			</div>
-			<div  id="donttaineirong"  class="authorization"></div>
+			<div class="authorization">
+				<p><span>姓名:</span><strong>1111</strong><span>代理级别:</span><strong>111</strong></p>
+				<p><span>年龄:</span><strong>1111</strong><span>联系方式:</span><strong>111</strong></p>
+				<p><span>所在区域:</span><strong>1111</strong></p>
+				<div id="shouquan_book">
+					<p>代理授权证书</p>
+					<img id="book_img" src="img/shouquan.jpg"/>
+				</div>
+			</div>
 		</div>
+		<div id="book_big"><img id="book_big_img" src=""/><span id="book_big_close">x</span></div>
 	</body>
-	<script type="text/javascript">
-                  function search(){
-                  	var user_name=$("#author_text").val();
-	      $.ajax({
-	          url: "/agentsearch.jhtml?user_name="+user_name,
-	          beforeSend:function(){
-	              $("#donttaineirong").html('正在加载……');
-	          },
-	          success: function (data) {
-	              $("#donttaineirong").html(data);
-	          }
-	      });
-	  }
-	</script>
 </html>

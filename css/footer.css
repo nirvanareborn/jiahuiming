@@ -24,23 +24,27 @@ body{
 	margin: 0 auto;
 }
 .nav{
-	width: 76%;
-	padding: 0 12%;
+	width:100%;
+	margin: 0 auto;
 	height: 40px;
 	background: #b26646;
 	white-space:nowrap;
 }
 .nav ul{
-	width: 100%;
+	width:1180px;
 	height: 40px;
+	margin: 0 auto;
 }
 .nav ul li{
 	float: left;
+	width: 12%;
 	height: 40px;
 	line-height: 40px;
-	padding: 0 4%;
 }
 .nav ul li a{
+	display: block;
+	width: 100%;
+	text-align: center;
 	font-size: 15px;
 	color: #FFFFFF;
 }
@@ -114,40 +118,6 @@ body{
 	left: 40px;
 	top: 15px;
 }
-#jieshao1 { 
-	width: 600px; 
-	height: 500px; 
-	border: 8px solid #DBC3B9; 
-	margin: 50px auto 0; 
-	position: relative; 
-	}
-#jieshao1 img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	}
-#jieshao1 a { 
-	position: absolute; 
-	width: 40px; 
-	height: 80px; 
-	line-height: 80px;
-	background: #fff; 
-	font-size: 40px; 
-	text-decoration: none; 
-	text-align: center; 
-	font-weight: bold; 
-	font-family: '黑体'; 
-	 top: 210px; 
-	 opacity: 0.8; 
-	 color:#A76A53; 
-	 line-height: 80px;
-	}
-#prev { 
-	left:-80px; 
-	}
-#next { 
-	right:-80px; 
-	}
 
 /*代理反馈feedback*/
 .feedback{
@@ -323,15 +293,16 @@ body{
 	font-size: 14px;
 	color: #666564;
 	position: absolute;
-	right: 70px;
+	left: 0;
 	top: 0;
 }
 #author_search{
 	display: inline-block;
-	width: 100px;
+	width: 150px;
 	height: 38px;
 	line-height: 38px;
 	color: #F9F9F9;
+	font-size: 14px;
 	background: #B26547;
 	position: absolute;
 	right: 0;
