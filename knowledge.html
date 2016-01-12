@@ -5,6 +5,58 @@
 		<title>养生常识</title>
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<style>
+			#konwyang{
+				width: 600px;
+				height:600px;
+				border: 8px solid #F9F9F9;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -300px 0 0 -300px;
+				z-index: 2;
+				display: none;
+			}
+			#konwyang_img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#konwyang_close{
+				display: block;
+				width:20px;
+				height:20px;
+				line-height: 20px;
+				border-radius: 10px;
+				background:#c70c33;
+				color: #FFFFFF;
+				font-size: 16px;
+				text-align: center;
+				position: absolute;
+				right: -15px;
+				top: -15px;
+				z-index: 11;
+			}
+			#konwyang_close:hover{
+				cursor: pointer;
+			}
+		</style>
+		<script>
+		$(document).ready(function(){
+			$('#konwyang_close').click(function(){
+				$('#konwyang').css('display','none');
+			});
+			$('#konwyang_img_title').on("click",function(){
+				$('#konwyang').css('display','block');
+				var src = $('#konwyang_img_title').attr('src');
+				$('#konwyang_img').attr('src',src);
+			});
+		})
+		</script>
 	</head>
 	<body>
 		<div class="parents">
@@ -14,12 +66,12 @@
 			<div class="nav">
 				<ul>
 					<li><a href="index.html">网站首页</a></li>
+					<li><a href="introduction.html">品牌介绍</a></li>
 					<li><a href="product.html">产品展示</a></li>
 					<li><a href="product_js.html">产品介绍</a></li>
 					<li><a href="feedback.html">代理反馈</a></li>
-					<li><a href="authorization.html">授权查询</a></li>
-					<li><a href="introduction.html">品牌介绍</a></li>
 					<li><a href="knowledge.html">养生常识</a></li>
+					<li><a href="authorization.html">授权查询</a></li>
 					<li><a href="contactUs.html">在线咨询</a></li>
 				</ul>
 			</div>
@@ -27,7 +79,7 @@
 			<div class="knowledge">
 				<div class="konw_text">
 					<h3 class="know_h3">湿气是众多病痛的始源，足语足贴为您扫盲：如何去除湿气的好方法</h3>
-					<img src="img/shoes2.png"/>
+					<img id="konwyang_img_title" src="img/IMG_1080.JPG"/>
 					<p style="font: 14px; color: #B26646; font-weight: bold;">一、湿邪之症 不可小觑</p>
 					<p>
 						湿邪，可说是现代人健康的最大敌人之一，10个人里有八九个人有湿邪潜伏。
@@ -85,15 +137,18 @@
 				<div class="konw_text">
 					<h3 class="know_h3">冬季养生小常识</h3>
 					<img src="img/footer.png"/>
-					<p style="text-indent: 2em;">
+					<p style="font: 14px; color: #B26646; font-weight: bold;">一、保持室内空气流通</p>
+					<p>
 						在冬季，人们习惯把房子的门窗关得紧紧的，如此会造成室内二氧化碳浓度过高，若再加上汗水的分解产物，消化道排除的不良气体等，将使室内空气受到严重污染。
 						 人在这样环境中会出现头昏、疲劳、恶心、食欲不振等现象。另外，冬季是一氧化碳中毒事件的好发季节，茵此一定要保持室内空气流通、新鲜。
 					</p>
-					<p style="text-indent: 2em;">
+					<p style="font: 14px; color: #B26646; font-weight: bold;">二、合理膳食，营养比例</p>
+					<p>
 						冬季膳食的营养特点应该是：摄取充足的、与其曝寒和活动程度相适应的热能。营养素的比例，以蛋白质、脂肪和碳水化合物，分别占15~23%、25~35%、 60~70%为宜。矿物质的摄取量也应较平时需要略高一些。维生素的部分，应特别注意增加维生素C的需要量。摄取足够的动物性食品和大豆，以满足优质蛋白 质的需求，
 						适当增加油脂，其中植物油最好达到一半以上，此外，蔬菜、水果和奶类得摄取量也需充足。
 					</p>
-					<p style="text-indent: 2em;">
+					<p style="font: 14px; color: #B26646; font-weight: bold;">三、合理作息，适当保养</p>
+					<p>
 						冬季，由于自然界阴盛阳衰，寒气袭人，极易损伤人体的阳气，所以冬季养生应从敛阴护阳出发。首先要尽量早睡晚起。冬季早睡晚起，保持较长的休息时间，可使意 志安静，人体潜伏的阳气不受干扰，这是冬季保健首先要注意的。其次，要十分注意背部的保暖。背部是阳中之阳，风寒等邪气极易透过人体的背部侵入，引发疾 病。老人、儿童及体弱者冬日要注意背部保暖，避免阳气受到伤害。接着要避寒就暖。冬天气候较冷，人们要注意尽量待在温度室中的房间哩，减少外出次数。如要 外出，就要穿上保暖的衣服和鞋袜。另外要特别注意的是：冬天洗澡，稍有不慎就会引起伤风感冒，并诱发呼吸道疾病等。
 						茵此应减少洗澡次数，及洗澡过程的保暖 动作，幼儿、老年人及有心脑血管疾病的人应注意。 
 					</p>
@@ -101,5 +156,6 @@
 				
 			</div>
 		</div>
+		<div id="konwyang"><img id="konwyang_img" src=""/><span id="konwyang_close">x</span></div>
 	</body>
 </html>
