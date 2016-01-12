@@ -47,10 +47,10 @@
 		</style>
 		<script>
 		$(document).ready(function(){
-			$('#book_big_close').click(function(){
+			$('#book_big_close').on("click",function(){
 				$('#book_big').css('display','none');
 			});
-			$('#book_img').on("click",function(){
+			$('#donttaineirong ').on("click",function(){
 				$('#book_big').css('display','block');
 				var src = $('#book_img').attr('src');
 				$('#book_big_img').attr('src',src);
