@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
 		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
-		<style>
+		<!--<style>
 			#projs_big{
 				width: 500px;
 				height: 550px;
@@ -44,8 +44,8 @@
 			#projs_big_close:hover{
 				cursor: pointer;
 			}
-		</style>
-		<script>
+		</style>-->
+		<!--<script>
 		$(document).ready(function(){
 			$('#projs_big_close').click(function(){
 				$('#projs_big').css('display','none');
@@ -58,7 +58,14 @@
 				});
 			})
 		})
-		</script>
+		</script>-->
+	<style>
+		#box { width:550px; height: 450px; border: 10px solid #DBC3B9; margin: 10px auto 0; position: relative; }
+		#box img {width: 100%; height: 100%;}
+		#box a { position: absolute; width: 40px; height: 80px; background: #fff; font-size: 40px; text-decoration: none; text-align: center; font-weight: bold; font-family: '黑体'; border: 4px solid #DBC3B9; top: 180px; opacity: 0.8; color:#B26646; line-height: 80px; }
+		#prev { left: -80px; }
+		#next { right: -80px; }
+	</style>
 	</head>
 	<body>
 		<div class="parents">
@@ -68,18 +75,18 @@
 			<div class="nav">
 				<ul>
 					<li><a href="index.html">网站首页</a></li>
+					<li><a href="introduction.html">品牌介绍</a></li>
 					<li><a href="product.html">产品展示</a></li>
 					<li><a href="product_js.html">产品介绍</a></li>
 					<li><a href="feedback.html">代理反馈</a></li>
-					<li><a href="authorization.html">授权查询</a></li>
-					<li><a href="introduction.html">品牌介绍</a></li>
 					<li><a href="knowledge.html">养生常识</a></li>
+					<li><a href="authorization.html">授权查询</a></li>
 					<li><a href="contactUs.html">在线咨询</a></li>
 				</ul>
 			</div>
 			<!--产品展示-->
-			<div class="product">
-				<div class="product_header"><h2>产品介绍</h2></div>
+			<!--<div class="product">
+					<div class="product_header"><h2>产品介绍</h2></div>
 				<ul>
 					<li class="produtjs_list"><img src="img/product/jieshao/img.jpg"/></li>
 					<li class="produtjs_list"><img src="img/product/jieshao/img01.jpg"/></li>
@@ -103,7 +110,71 @@
 				
 			</div>
 		</div>
-		<div id="projs_big"><img id="projs_big_img" src=""/><span id="projs_big_close">x</span></div>
-	</body>
-</html>
+		<div id="projs_big"><img id="projs_big_img" src=""/><span id="projs_big_close">x</span></div>-->
+		
+		<div id="box">
+		  <a href="javascript:;" id="prev"><</a>
+		  <a href="javascript:;" id="next">></a>
+		  <img src="img/product/jieshao/img.jpg" id="pic" />
+		</div>
+	<script>
+	
+	var oImg = document.getElementById('pic');
+	var oPrev = document.getElementById('prev');
+	var oNext = document.getElementById('next');
+	
+	var num = 0;
+	
+	var arr = [
+		'img/product/jieshao/img.jpg',
+		'img/product/jieshao/img01.jpg',
+		'img/product/jieshao/img02.jpg',
+		'img/product/jieshao/img03.jpg',
+		'img/product/jieshao/img04.jpg',
+		'img/product/jieshao/img05.jpg',
+		'img/product/jieshao/img06.jpg',
+		'img/product/jieshao/img08.jpg',
+		'img/product/jieshao/img09.jpg',
+		'img/product/jieshao/img10.jpg',
+		'img/product/jieshao/img11.jpg',
+		'img/product/jieshao/img12.jpg',
+		'img/product/jieshao/img13.jpg',
+		'img/product/jieshao/img14.jpg',
+		'img/product/jieshao/img15.jpg',
+		'img/product/jieshao/img16.jpg',
+		'img/product/jieshao/img17.jpg',
+		'img/product/jieshao/img18.jpg'
+	];
+	
+	
+	
+	
+	oPrev.onclick = function(){
+		
+		num --;
+		if( num < 0 ){
+			num = arr.length - 1;		
+		}
+		
+		oImg.src = arr[num];
+		
+	};
+	
+	oNext.onclick = function(){
+		
+		num ++;
+		if( num == arr.length ){
+			num = 0;		
+		}
+		
+		oImg.src = arr[num];
+		
+	};
+	
+	</script>
+	
  
+	</body>
+	</html>
+
+	
