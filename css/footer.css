@@ -399,8 +399,37 @@ body{
 	margin-top: 10px;
 	border: 2px solid #DBC3B9;
 }
-
-
-
-
-
+.lianxi_text{
+	width: 100%;
+	height:50px;
+	background: #EFEFEF;
+	padding: 10px 0;
+}
+.lianxi_text div{
+	float: left;
+}
+.lianxi_text_left{
+	width: 30%;
+	height: 50px;
+}
+.lianxi_text_left p{
+	width: 100%;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	color: #B26646;
+}
+.lianxi_text_right{
+	width: 65%;
+	height: 50px;
+}
+.lianxi_text_right p{
+	width: 100%;
+	padding: 3px 0;
+	font-size: 12px;
+	color: #333333;
+}
+.lianxi_text_right p span{
+	font-size: 14px;
+	color: #B26547;
+}
