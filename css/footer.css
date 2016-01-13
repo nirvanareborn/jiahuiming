@@ -384,17 +384,17 @@ body{
 /*微信二维码*/
 .weixiner{
 	width: 120px;
-	height:230px;
+	height:270px;
 	position: fixed;
 	right: 0;
-	bottom: 10px;
+	bottom: 20px;
 	z-index: 99;
 	/*border: 2px solid #DBC3B9;*/
 }
 .weixiner img{
 	display: block;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	margin: 0 auto;
 	margin-top: 10px;
 	border: 2px solid #DBC3B9;
