@@ -2,14 +2,23 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>在线咨询</title>
+		<title>联系我们</title>
 		<link rel="stylesheet" href="css/public.css" type="text/css" />
 		<link rel="stylesheet" href="css/footer.css" type="text/css" />
 		<style type="text/css">
 			html,body{ width: 100%; height: 100%; margin: 0;}
 			body{ background-color: #efefef;}
-			.container{ max-width: 1100px; margin:0 auto; height: 400px; position: relative; }
-			.container img{width:60px; padding: 10px; border: 1px solid #ccc; box-shadow:2px 2px 3px rgba(50,50,50,.4); position: absolute; z-index: 1; background: #fff; }
+			.contactUs{ max-width: 1100px; margin:0 auto; height: 340px; }
+			/*.container{ max-width: 1100px; margin:0 auto; height: 400px; position: relative; }*/
+			.contactUs .contactUs_zuyu{
+				display: inline-block;
+				width: 240px;
+				height: 210px;
+				margin: 60px 60px;
+				border: 1px solid #B26646;
+			}
+			/**/
+			/*.container img{width:60px; padding: 10px; border: 1px solid #ccc; box-shadow:2px 2px 3px rgba(50,50,50,.4); position: absolute; z-index: 1; background: #fff; }
 			.container img:nth-child(1){
 				left: 40px;
 				top:0px;
@@ -107,9 +116,9 @@
 				-webkit-transform:rotate(5deg);
 				-ms-transform:rotate(5deg);
 				transform:rotate(5deg);
-			}
+			}*/
 			/*第二列*/
-			.container img:nth-child(15){
+			/*.container img:nth-child(15){
 				left:80px;
 				top:160px;
 				-webkit-transform:rotate(5deg);
@@ -208,8 +217,6 @@
 				transform:rotate(-7deg);
 			}
 			
-			
-			
 			.container img:hover{
 				-webkit-transform:rotate(0deg) scale(2.5);
 				-ms-transform:rotate(0deg) scale(2.5);
@@ -217,7 +224,7 @@
 				-webkit-transition:all 0.5s ease-in;
 				transition:all 0.5s ease-in;
 				z-index: 99;
-			}
+			}*/
 		</style>
 
 	</head>
@@ -231,7 +238,7 @@
 					<li><a href="index.html">网站首页</a></li>
 					<li><a href="introduction.html">关于我们</a></li>
 					<li><a href="product.html">产品展示</a></li>
-				<!--<li><a href="product_js.html">产品介绍</a></li>-->
+					<!--<li><a href="product_js.html">产品介绍</a></li>-->
 					<li><a href="feedback.html">代理反馈</a></li>
 					<li><a href="knowledge.html">养生常识</a></li>
 					<li><a href="authorization.html">授权查询</a></li>
@@ -239,8 +246,8 @@
 				</ul>
 			</div>
 			<!--联系我们-->
-                       <div class="contactUs">
-				<!--<div class="container" style="display:none">
+			<div class="contactUs">
+				<!--<div class="container">
 				    <img src="img/peple_img/3/10.JPG"/>
 				    <img src="img/peple_img/3/11.JPG"/>
 				    <img src="img/peple_img/3/12.JPG"/>
@@ -255,7 +262,8 @@
 				    <img src="img/peple_img/3/19.JPG"/>
 				    <img src="img/peple_img/3/20.JPG"/>
 				    <img src="img/peple_img/3/21.JPG"/>
-				    <img src="img/peple_img/3/22.JPG"/>
+				    <!--第二列-->
+				    <!--<img src="img/peple_img/3/22.JPG"/>
 				    <img src="img/peple_img/3/23.JPG"/>
 				    <img src="img/peple_img/3/24.JPG"/>
 				    <img src="img/peple_img/3/25.JPG"/>
@@ -271,6 +279,23 @@
 				    <img src="img/peple_img/3/30.JPG"/>
 				    <img src="img/peple_img/2/7.jpg"/>
 				</div>-->
+				<img id="contacuzuyu1" onmouseover="bigger()" onmouseout="smaller()" class="contactUs_zuyu" src="img/zuyuco1.jpg"/>
+				<img id="contacuzuyu2" class="contactUs_zuyu" src="img/zuyuco3.jpg"/>
+				<img id="contacuzuyu3" class="contactUs_zuyu" src="img/zuyuco2.jpg"/>
+				<!--<script type="text/javascript">
+				 var imgZuyu = document.getElementById('contacuzuyu1');
+				 function bigger(){
+				  imgZuyu.style.width = '280px';
+				  imgZuyu.style.height = '250px';
+				  imgZuyu.style.position ='absolute';
+				 }
+				 
+				 function smaller(){
+				  imgZuyu.style.width = '180px';
+				  imgZuyu.style.height = '150px';
+				 }
+				
+				</script>-->
 				 <script language="JavaScript" src="http://code.54kefu.net/kefu/js/b144/905544.js" type="text/javascript" charset="utf-8"></script>
     			
 			</div>
